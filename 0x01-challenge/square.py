@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-class square():
+class Square():
 
     side = 0
 
@@ -21,7 +21,7 @@ class square():
 
 if __name__ == "__main__":
 
-    s = square(side=12)
+    s = Square(side=12)
     print(s)
     print(s.area_of_my_square())
     print(s.permiter_of_my_square())
