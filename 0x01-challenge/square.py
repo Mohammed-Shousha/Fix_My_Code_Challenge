@@ -1,11 +1,18 @@
 #!/usr/bin/python3
+"""
+Square class
+"""
+
 
 class Square():
+    """ Class which represents a Square """
+
 
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """ Init method """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -14,9 +21,11 @@ class Square():
         return self.width * self.height
 
     def permiter_of_my_square(self):
+        """ Premiter of the square """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """ String representation """
         return "{}/{}".format(self.width, self.height)
 
 
